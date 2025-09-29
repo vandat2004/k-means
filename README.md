@@ -1,4 +1,5 @@
 Bài toán k-means
+
 Trong lĩnh vực kinh doanh, việc hiểu rõ hành vi tiêu dùng của khách hàng là chìa khóa để xây dựng chiến lược tiếp thị hiệu quả. Bài toán đặt ra là phân nhóm khách hàng dựa trên các yếu tố như thu nhập hằng năm và mức chi tiêu.
 
 Mục đích nghiên cứu
