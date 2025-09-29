@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 class="mb-4">Kết quả phân cụm</h3>
+
+<p><strong>Silhouette Score:</strong> {{ score }}</p>
+<p><strong>Số cụm đã chọn:</strong> {{ n_clusters }}</p>
+
+<h5 class="mt-4">📊 Một vài khách hàng sau khi phân cụm:</h5>
+<div class="table-responsive">
+  {{ tables | safe }}
+</div>
+
+<h5 class="mt-4">📍 Tâm cụm:</h5>
+<ul>
+  {% for c in centers %}
+    <li>Income: {{ "%.2f"|format(c[0]) }} | Score: {{ "%.2f"|format(c[1]) }}</li>
+  {% endfor %}
+</ul>
+
+<a href="/" class="btn btn-secondary mt-3">Quay lại</a>
+{% endblock %}
